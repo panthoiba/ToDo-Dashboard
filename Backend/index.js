@@ -1,5 +1,4 @@
 const dns = require("dns");
-
 dns.setServers([
     "8.8.8.8",
     "8.8.4.4"
@@ -16,7 +15,6 @@ const userRouter = require("./routes/user.routes");
 const todoRouter = require("./routes/todo.routes");
 
 const app = express();
-
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -24,7 +22,10 @@ app.use(express.json());
 // Routes
 app.use("/api/auth", userRouter);
 app.use("/api/todos", todoRouter);
-
+// Add this new route right here:
+app.get('/', (req, res) => {
+    res.json({ message: "ToDo Dashboard Backend is running" });
+});
 // MongoDB connection
 mongoose
     .connect(process.env.URL)
@@ -34,7 +35,6 @@ mongoose
     .catch((error) => {
         console.log("MongoDB connection error:", error.message);
     });
-
 // Server
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`);
