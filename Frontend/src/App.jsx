@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
-import Login from "./components/login";
-import Register from "./components/Register";
-import Todo from "./components/todo";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import Todo from "./Components/Todo";
 
 function App() {
     const navigate = useNavigate();
