@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Login({ onLogin }) {
 
@@ -89,6 +90,10 @@ function Login({ onLogin }) {
                 </button>
 
             </form>
+
+            <p style={{ marginTop: "15px", textAlign: "center" }}>
+                Don't have an account? <Link to="/register" style={{ color: "#007bff", textDecoration: "none" }}>Register here</Link>
+            </p>
 
         </div>
     );
