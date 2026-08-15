@@ -1,6 +1,3 @@
-
-
-
 import axios from "axios";
 
 function Login({ onLogin }) {
@@ -16,7 +13,7 @@ function Login({ onLogin }) {
         try {
 
             const response = await axios.post(
-                "http://localhost:3000/api/auth/login",
+                "https://todo-dashboard-xcit.onrender.com/api/auth/login",
                 data
             );
 

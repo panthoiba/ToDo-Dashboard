@@ -1,6 +1,3 @@
-
-
-
 import axios from "axios";
 
 function Register({ onRegister }) {
@@ -17,7 +14,7 @@ function Register({ onRegister }) {
         try {
 
             const response = await axios.post(
-                "http://localhost:3000/api/auth/register",
+                "https://todo-dashboard-xcit.onrender.com/api/auth/register",
                 data
             );
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://todo-dashboard-xcit.onrender.com";
 
 function Todo() {
     const navigate = useNavigate();
