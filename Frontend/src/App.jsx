@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import "./App.css";
 
 import Login from "./Components/Login";
 import Register from "./Components/Register";
