@@ -33,7 +33,9 @@
 .input-group label {
   margin-bottom: 8px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
+  color: #d1d1d1;
+  text-align: left; /* <-- Add this line! */
 }
 
 .input-group input {
